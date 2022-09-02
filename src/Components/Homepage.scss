@@ -1,0 +1,130 @@
+.Homepage {
+}
+
+.page-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #7237c5;
+
+  .logo{
+    width: 150px;
+    
+  }
+
+  h3 {
+    color: white;
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+    width: fit-content;
+    background: #fb565a;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: none;
+
+    &:hover {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+  }
+}
+
+.billboard {
+  padding-top: 100px;
+  background: #7237c5;
+  position: relative;
+
+  .page-width {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 80px;
+    color: white;
+    margin-bottom: 12px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -2px;
+    line-height: 90px;
+  }
+
+  p {
+    color: #bdb6c6;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+
+button {
+  border-radius: 500px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 18px;
+  background: #f99d07;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  i{
+    margin-left: 10px;
+  }
+}
+
+svg{
+  position: relative;
+  bottom: 10vw;
+  z-index: -2;
+}
+
+
+.path-0{
+  animation:pathAnim-0 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes pathAnim-0{
+  0%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 112.39285714285714,184.39285714285714 224.78571428571428,168.78571428571428 360,158 C 495.2142857142857,147.21428571428572 653.2499999999999,141.25 772,163 C 890.7500000000001,184.75 970.2142857142858,234.21428571428572 1075,245 C 1179.7857142857142,255.78571428571428 1309.892857142857,227.89285714285714 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  25%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 107.57142857142858,183.28571428571428 215.14285714285717,166.57142857142858 318,171 C 420.85714285714283,175.42857142857142 519,200.99999999999997 663,223 C 807,245.00000000000003 996.8571428571429,263.42857142857144 1134,259 C 1271.142857142857,254.57142857142856 1355.5714285714284,227.28571428571428 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  50%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 104.25,213 208.5,226 339,223 C 469.5,220 626.2499999999999,201 758,202 C 889.7500000000001,203 996.5,224 1106,227 C 1215.5,230 1327.75,215 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  75%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 134.3571428571429,183.32142857142856 268.7142857142858,166.64285714285714 386,163 C 503.2857142857142,159.35714285714286 603.4999999999998,168.75 720,175 C 836.5000000000002,181.25 969.2857142857144,184.35714285714286 1092,188 C 1214.7142857142856,191.64285714285714 1327.3571428571427,195.82142857142856 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  100%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 112.39285714285714,184.39285714285714 224.78571428571428,168.78571428571428 360,158 C 495.2142857142857,147.21428571428572 653.2499999999999,141.25 772,163 C 890.7500000000001,184.75 970.2142857142858,234.21428571428572 1075,245 C 1179.7857142857142,255.78571428571428 1309.892857142857,227.89285714285714 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+}
